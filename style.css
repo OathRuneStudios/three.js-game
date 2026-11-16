@@ -1,0 +1,154 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    display: block;
+}
+
+#hud {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.brand {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.brand span {
+    color: #91b77c;
+}
+
+.stats {
+    position: absolute;
+    top: 75px;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.stats span {
+    color: #a8d18d;
+    font-weight: bold;
+}
+
+#inventory {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background: #101810bb;
+    border: 1px solid #ffffff33;
+    padding: 15px 20px;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+#inventory strong {
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+#prompt {
+    position: absolute;
+    bottom: 18%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    text-shadow: 0 2px 5px black;
+}
+
+#crosshair {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 300;
+    text-shadow: 0 0 5px black;
+}
+
+#save {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    pointer-events: auto;
+    padding: 12px 18px;
+    background: #314d32;
+    border: 1px solid #8aaf7a;
+    color: white;
+    cursor: pointer;
+}
+
+#start-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #080d09dd;
+    text-align: center;
+}
+
+.panel {
+    padding: 35px;
+}
+
+.panel h1 {
+    font-size: 55px;
+    letter-spacing: 10px;
+    margin-bottom: 5px;
+}
+
+.panel p {
+    color: #b6c4b2;
+}
+
+#start {
+    margin-top: 25px;
+    padding: 17px 30px;
+    background: #557b49;
+    border: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.instructions {
+    margin-top: 35px;
+    line-height: 2;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .panel h1 {
+        font-size: 34px;
+    }
+
+    #inventory {
+        top: 130px;
+        right: 12px;
+    }
+}
