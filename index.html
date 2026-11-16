@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlands Survival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hud">
+        <div class="brand">WILDLANDS <span>SURVIVAL</span></div>
+
+        <div class="stats">
+            <div>HUNGER <span id="hunger">100</span>%</div>
+            <div>THIRST <span id="thirst">100</span>%</div>
+            <div>DAY <span id="day">1</span></div>
+        </div>
+
+        <div id="inventory">
+            <strong>INVENTORY</strong>
+            <div>Wood: <span id="wood">0</span></div>
+            <div>Stone: <span id="stone">0</span></div>
+        </div>
+
+        <div id="prompt"></div>
+        <div id="crosshair">+</div>
+
+        <button id="save">SAVE GAME</button>
+    </div>
+
+    <div id="start-screen">
+        <div class="panel">
+            <h1>WILDLANDS</h1>
+            <p>A wilderness survival experience.</p>
+            <button id="start">ENTER THE WILDERNESS</button>
+            <p class="instructions">
+                WASD - Move<br>
+                Mouse - Look around<br>
+                E - Gather resources<br>
+                ESC - Release mouse
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
