@@ -17,11 +17,29 @@
             <div>DAY <span id="day">1</span></div>
         </div>
 
-        <div id="inventory">
-            <strong>INVENTORY</strong>
-            <div>Wood: <span id="wood">0</span></div>
-            <div>Stone: <span id="stone">0</span></div>
-        </div>
+        
+<button id="inventory-toggle">INVENTORY [E]</button>
+
+<div id="inventory" class="inventory-panel">
+    <div class="inventory-header">
+        <strong>INVENTORY</strong>
+        <button id="inventory-close">✕</button>
+    </div>
+
+    <div class="inventory-items">
+        <div>🪵 Wood: <span id="wood">0</span></div>
+        <div>🪨 Stone: <span id="stone">0</span></div>
+        <div>🫐 Berries: <span id="berries">0</span></div>
+        <div>🪓 Stone axe: <span id="axe">No</span></div>
+    </div>
+
+    <div class="inventory-actions">
+        <button id="eat">EAT BERRIES</button>
+        <button id="craft-axe">CRAFT STONE AXE</button>
+        <button id="craft-fire">CRAFT CAMPFIRE</button>
+    </div>
+</div>
+
 
         <div id="prompt"></div>
         <div id="crosshair">+</div>
